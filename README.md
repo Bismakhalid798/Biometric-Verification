@@ -27,42 +27,6 @@ This API allows users to upload cropped finger images (detected using YOLOv8), w
 
 ---
 
-## 🧠 Key Functions
-
-### `frequest`
-- Calculates the **spatial frequency** of ridges using orientation information.
-- Rotates the image, projects ridges, and determines ridge wavelengths.
-
-### `ridge_orient`
-- Computes **ridge orientation** at each pixel by analyzing gradients.
-- Applies smoothing for consistent directional information.
-
-### `ridge_freq`
-- Determines **ridge frequency** in small blocks using local orientation data.
-
-### `ridge_segment`
-- Segments relevant image areas via:
-  - Histogram equalization
-  - Standard deviation-based thresholding
-- Normalizes the image for further processing.
-
-### `ridge_filter`
-- Applies **Gabor filter** to enhance ridge-like structures.
-- Uses calculated orientation and frequency maps.
-
-### `image_enhance`
-- Main enhancement function:
-  - Normalization
-  - Segmentation
-  - Orientation & frequency analysis
-  - Ridge filtering
-
-### `processImage`
-- Main function for API integration.
-- Processes input and visualizes intermediate outputs.
-
----
-
 ## 📤 API Input/Output
 
 | **Type**  | **Format**         |
