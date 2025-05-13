@@ -7,9 +7,11 @@ This API allows users to upload cropped finger images (detected using YOLOv8), w
 ## 🚀 Features
 
 - Automatic finger detection using YOLOv8
+- Angle Correction of detected images using ViT
 - Advanced image enhancement pipeline
 - Ridge orientation and frequency analysis
 - Gabor filtering for ridge structure enhancement
+- Fingerprints enhancement using GANs
 - RESTful API with base64 output for integration
 
 ---
